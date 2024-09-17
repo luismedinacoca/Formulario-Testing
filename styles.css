@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 2rem; /* Increased margin between categories */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interests-column {
+    width: 48%;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Added gap between radio buttons and labels */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem; /* Space between radio button and label */
+}
+
+.input-otro {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    width: 200px;
+    margin-top: 0.5rem; /* Space between "Otro" radio button and text input */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Added gap between checkboxes and labels */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem; /* Space between checkbox and label */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto; /* Center button */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Inscripción</h1>
+        <form action="#" method="post" class="registration-form">
+            <div class="form-group">
+                <label for="nombre">NOMBRES Y APELLIDOS:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">CORREO ELECTRÓNICO:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pais">PAÍS:</label>
+                <select id="pais" name="pais" required>
+                    <option value="" disabled selected>Selecciona tu país</option>
+                    <!-- América -->
+                    <option value="mx">México</option>
+                    <option value="us">Estados Unidos</option>
+                    <option value="ca">Canadá</option>
+                    <option value="br">Brasil</option>
+                    <option value="ar">Argentina</option>
+                    <option value="cl">Chile</option>
+                    <option value="co">Colombia</option>
+                    <option value="pe">Perú</option>
+                    <option value="ve">Venezuela</option>
+                    <option value="uy">Uruguay</option>
+                    <!-- Europa -->
+                    <option value="gb">Reino Unido</option>
+                    <option value="de">Alemania</option>
+                    <option value="fr">Francia</option>
+                    <option value="it">Italia</option>
+                    <option value="es">España</option>
+                    <option value="pt">Portugal</option>
+                    <option value="nl">Países Bajos</option>
+                    <option value="se">Suecia</option>
+                    <option value="no">Noruega</option>
+                    <option value="fi">Finlandia</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="intereses">INTERESES:</label>
+                <div class="interests-container">
+                    <div class="interests-column">
+                        <select id="intereses" name="intereses[]" multiple required>
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="moda">Moda</option>
+                            <option value="viajes">Viajes</option>
+                        </select>
+                    </div>
+                    <div class="interests-column">
+                        <select id="intereses-2" name="intereses[]" multiple required>
+                            <option value="cine">Cine</option>
+                            <option value="arte">Arte</option>
+                            <option value="lectura">Lectura</option>
+                            <option value="gastronomia">Gastronomía</option>
+                        </select>
+                    </div>
+                    <div class="interests-column">
+                        <select id="intereses-3" name="intereses[]" multiple required>
+                            <option value="musica">Música</option>
+                            <option value="juegos">Juegos</option>
+                            <option value="juegos">Pintura</option>
+                            <option value="juegos">Naturaleza</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>GÉNERO:</label>
+                <div class="radio-group">
+                    <label for="masculino">
+                        <input type="radio" id="masculino" name="genero" value="masculino" required>
+                        Masculino
+                    </label>
+                    <label for="femenino">
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        Femenino
+                    </label>
+                    <label for="otro">
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        Otro
+                    </label>
+                </div>
+                <input type="text" id="otro-gender" name="otro-gender" placeholder="Especificar" class="input-otro">
+            </div>
+            <div class="form-group">
+                <label>PREFERENCIAS:</label>
+                <div class="checkbox-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="preferencias[]" value="newsletter">
+                        Recibir boletín
+                    </label>
+                    <label for="ofertas">
+                        <input type="checkbox" id="ofertas" name="preferencias[]" value="ofertas">
+                        Recibir ofertas especiales
+                    </label>
+                    <label for="actualizaciones">
+                        <input type="checkbox" id="actualizaciones" name="preferencias[]" value="actualizaciones">
+                        Recibir actualizaciones
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
